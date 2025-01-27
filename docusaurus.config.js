@@ -76,12 +76,12 @@ const config = {
             position: 'right',
             label: 'Enterprise',
           },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-            dropdownActiveClassDisabled: true,
-          },
+          // {
+          //   type: 'docsVersionDropdown',
+          //   position: 'right',
+          //   dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          //   dropdownActiveClassDisabled: true,
+          // },
         ],
       },
       footer: {
