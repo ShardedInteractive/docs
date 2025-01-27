@@ -16,7 +16,7 @@ const sidebars = {
     {
       type: 'doc',
       label: 'Introduction to Enterprise',
-      id: 'enterprise/getting-started',
+      id: 'enterprise/intro',
     },
   ],
 };
