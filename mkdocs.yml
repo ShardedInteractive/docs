@@ -7,7 +7,6 @@ site_description: >
 
 repo_name: shardedinteractive/sharded
 repo_url: https://github.com/shardedinteractive/sharded
-edit_uri: edit/main/docs/
 
 nav:
   - Getting Started:
