@@ -9,9 +9,12 @@ repo_name: shardedinteractive/sharded
 repo_url: https://github.com/shardedinteractive/sharded
 
 nav:
-  - Getting Started:
-    - index.md
-    - "Basic Configuration": basic.md
+  - Home:
+    - "Welcome to Sharded" : index.md
+    - "Self-Hosting Sharded":
+        - getting-started.md
+        - "Basic Configuration": basic.md
+
   - Addons:
     - addons/index.md
   - Blog:
@@ -21,26 +24,26 @@ theme:
   name: material
 
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
+      - media: "(prefers-color-scheme)"
+        toggle:
+          icon: material/brightness-auto
+          name: Switch to light mode
 
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: purple
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: "#4a96d3"
+        accent: "#8ecae6"
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
 
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: black
+        accent: "#8ecae6"
+        toggle:
+          icon: material/brightness-4
+          name: Switch to system preference
   font:
     text: "Roboto"
     code: " JetBrains Mono"
@@ -58,9 +61,9 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    - navigation.expand
     - navigation.prune
     - navigation.indexes
+    - navigation.sections
     - navigation.top
     - toc.follow
     - search.suggest
@@ -101,6 +104,7 @@ markdown_extensions:
   - attr_list
   - def_list
   - admonition
+  - md_in_html
 
 extra:
   consent:
@@ -113,7 +117,29 @@ extra:
     actions:
       - accept
       - manage
+  analytics:
+    provider: google
+    property: G-6SBXSR62C1
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            
+            
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://github.com/ShardedInteractive/sharded/issues/new?template=feedback.yml" target="_blank" rel="noopener">feedback form</a>.
 
 copyright: >
   Copyright &copy; 2024 - 2025 Sharded Interactive –
   <a href="#__consent">Change cookie settings</a>
+
+extra_css:
+  - stylesheets/extra.css

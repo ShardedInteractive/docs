@@ -1,0 +1,60 @@
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #4a96d3;          /* Softer blue for header */
+  --md-primary-fg-color--light: #c7e2f6;    /* Very light blue */
+  --md-primary-fg-color--dark: #2d5f8a;     /* Darker blue for contrast */
+  
+  --md-accent-fg-color: #8ecae6;
+  --md-accent-fg-color--transparent: rgba(142, 202, 230, 0.1);
+  
+  /* Background color for main content */
+  --md-default-bg-color: #f8fafc;          /* Off-white background */
+  
+  /* Text colors */
+  --md-typeset-color: #334155;             /* Slate-gray instead of pure black */
+  --md-default-fg-color: #334155;          /* Matches the typeset color */
+  --md-default-fg-color--light: #64748b;   /* Light gray for secondary text */
+}
+
+.md-typeset {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--md-typeset-color);
+}
+
+.md-typeset code {
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 0.2rem;
+}
+
+.tag-version {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #8ecae6;
+  background-color: rgba(142, 202, 230, 0.08);
+  text-decoration: none;
+  line-height: 1;
+  font-family: "Roboto Mono", SFMono-Regular, Consolas, Menlo, monospace;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.tag-version:hover {
+  background-color: rgba(142, 202, 230, 0.15);
+  text-decoration: none;
+}
+
+.tag-version .icon {
+  margin-right: 0.25rem;
+  font-size: 1em;
+  vertical-align: text-bottom;
+}
+
+.tag-version:not(:has(.icon)):before {
+  content: "v";
+  margin-right: 0.05rem;
+  opacity: 0.7;
+}
