@@ -1,5 +1,5 @@
 site_name: Sharded
-site_url: https://sharded.app/
+site_url: https://docs.sharded.app/
 
 site_description: >
   Sharded is a python powered discord bot that powers your server with
@@ -12,9 +12,10 @@ nav:
   - Home:
     - "Welcome to Sharded" : index.md
     - "Self-Hosting Sharded":
-        - getting-started.md
+        - "Getting Started": getting-started.md
         - "Basic Configuration": basic.md
-
+    - "Sharded Programs":
+      - "Sharded Verification": verification.md
   - Addons:
     - addons/index.md
   - Blog:
@@ -69,8 +70,6 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-    - content.action.edit
-    - content.action.view
 
 plugins:
   - privacy
@@ -83,7 +82,7 @@ plugins:
       type: date
   - git-committers:
       enabled: !ENV [CI, false]
-      repository: shardedinteractive/sharded
+      repository: shardedinteractive/docs
       branch: main
 
 markdown_extensions:

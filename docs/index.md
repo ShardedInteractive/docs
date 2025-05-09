@@ -1,6 +1,6 @@
 ---
 title: Welcome to Sharded
-description: Introduction to Sharded and the project.
+description: Sharded is a python-powered discord bot that aims to bring advanced moderation, community management features, and customization to the users.
 icon: fontawesome/solid/house
 ---
 Sharded is a python-powered discord bot that aims to bring advanced moderation,
@@ -33,4 +33,4 @@ With core principles of modularity, extensibility, and customization, Sharded is
 Did we mention that Sharded is open-source? :fontawesome-solid-heart: With Sharded being open-source, you can
 self-host an instance or contribute to the project anytime.
 
-Ready to get started? Check out the **[Installation Guide](getting-started.md)** to learn how to install Sharded
+Ready to get started? Check out the **[Installation Guide](getting-started.md)** to learn how to install Sharded.
